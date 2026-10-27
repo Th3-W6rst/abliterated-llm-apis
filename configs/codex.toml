@@ -1,0 +1,12 @@
+# ~/.codex/config.toml
+# Codex CLI → Refuseless over the OpenAI Responses API (POST /v1/responses).
+# Export the key before starting Codex: export REFUSELESS_API_KEY="abl_your_key_here"
+
+model = "glm-5.3-abliterated"
+model_provider = "refuseless"
+
+[model_providers.refuseless]
+name = "Refuseless"
+base_url = "https://api.refuseless.com/v1"
+env_key = "REFUSELESS_API_KEY"
+wire_api = "responses"

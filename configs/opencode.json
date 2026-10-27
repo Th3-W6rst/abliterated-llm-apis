@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "refuseless/glm-5.3-abliterated",
+  "provider": {
+    "refuseless": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Refuseless",
+      "options": {
+        "baseURL": "https://api.refuseless.com/v1"
+      },
+      "models": {
+        "glm-5.3-abliterated": {
+          "name": "GLM 5.3 Abliterated",
+          "tools": true,
+          "reasoning": true,
+          "limit": { "context": 1048576, "output": 16384 }
+        },
+        "glm-5.3-flash-abliterated": {
+          "name": "GLM 5.3 Flash Abliterated",
+          "tools": true,
+          "reasoning": true,
+          "limit": { "context": 1048576, "output": 16384 }
+        }
+      }
+    }
+  }
+}
