@@ -43,6 +43,7 @@ US$ per 1M tokens, input / output.
 | Venice | Abliterated Large Flash | 1.25 / 2.50 | |
 | Refuseless | `glm-5.3-flash-abliterated` | Not published | Price not listed in the public docs |
 | [OrcaRouter](https://www.orcarouter.ai) | OrcaCyber GLM 5.3 Flash | Not published per token | Publishes its weights and refusal-rate method on Hugging Face |
+| [AbliteratedLLM](https://abliteratedllm.dev) | `glm-5.3-flash-abliterated` | 0.0977 / 0.3421 (cache read 0.0098) | Weight edit: [orcarouter/GLM-5.3-Flash-Uncensored-FP8](https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8), served in native FP8. OpenAI, Anthropic and Responses formats. Context 1,048,576, output limit 131,072. Text and image input |
 
 For price alone on the Flash tier, NanoGPT and MagmaRouter are the cheapest options listed here.
 
@@ -78,6 +79,7 @@ Read on 2026-10-27.
 - Venice: [docs.venice.ai/overview/pricing](https://docs.venice.ai/overview/pricing.md).
 - OrcaRouter: [orcarouter.ai](https://www.orcarouter.ai) model pages and [huggingface.co/orcarouter](https://huggingface.co/orcarouter).
 - OpenRouter: `GET https://openrouter.ai/api/v1/models`.
+- AbliteratedLLM: `GET https://api.abliteratedllm.dev/v1/models` (public, no key; read on 2026-11-09) and [abliteratedllm.dev/pricing](https://abliteratedllm.dev/pricing).
 
 ## License
 
