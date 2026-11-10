@@ -31,6 +31,8 @@ US$ per 1M tokens, input / output.
 | [NanoGPT](https://nano-gpt.com) | `z-ai/glm-5.3-uncensored` | 1.25 / 2.25 (cache read 0.30) | 1,048,576 | OpenAI | Not stated ("experimental uncensored") |
 | [abliteration.ai](https://abliteration.ai) | `abliterated-model-large-v2` | 3.00 / 5.00 | ~1.05M | OpenAI, Anthropic | Abliteration |
 | [Venice](https://venice.ai) | Abliterated Large V2 | 3.00 / 5.00 | ~1.05M | OpenAI | Not stated |
+| [Dagon Inference](https://inference.dagon.so) (router) | `glm-5.3-abliterated` | 1.10 / 2.20 (cache read 0.165) | 1,048,576 | OpenAI, Anthropic | Not stated beyond "refusal behavior removed". Resold from Refuseless, Experiential Labs or Silk Compute, cheapest healthy one per request |
+| Dagon Inference (router) | `abliterated-model-large-v2` | 3.30 / 5.50 (cache read 0.33) | 1,000,000 | OpenAI, Anthropic | Abliterated and post-trained by abliteration.ai, per Dagon's model notes. Resold from abliteration.ai |
 
 ## GLM 5.3 Flash and other small models
 
@@ -42,6 +44,9 @@ US$ per 1M tokens, input / output.
 | Venice | DeepSeek V4.1 Flash Uncensored | 0.33 / 1.32 | |
 | Venice | Abliterated Large Flash | 1.25 / 2.50 | |
 | Refuseless | `glm-5.3-flash-abliterated` | Not published | Price not listed in the public docs |
+| Dagon Inference (router) | `glm-5.3-flash-abliterated` | 0.132 / 0.55 (cache read 0.0275) | Resold from Refuseless, Experiential Labs or Silk Compute. Method not stated beyond "refusal behavior removed" |
+| Dagon Inference (router) | `deepseek-v4.1-flash-abliterated` | 0.11 / 0.44 (cache read 0.022) | Resold from Lutheos, Refuseless, Experiential Labs or Silk Compute. Method not stated beyond "refusal behavior removed" |
+| Dagon Inference (router) | `abliterated-model-large-flash` | 1.10 / 2.20 (cache read 0.11) | Resold from abliteration.ai. Text and image input |
 | [OrcaRouter](https://www.orcarouter.ai) | OrcaCyber GLM 5.3 Flash | Not published per token | Publishes its weights and refusal-rate method on Hugging Face |
 
 For price alone on the Flash tier, NanoGPT and MagmaRouter are the cheapest options listed here.
@@ -78,6 +83,12 @@ Read on 2026-10-27.
 - Venice: [docs.venice.ai/overview/pricing](https://docs.venice.ai/overview/pricing.md).
 - OrcaRouter: [orcarouter.ai](https://www.orcarouter.ai) model pages and [huggingface.co/orcarouter](https://huggingface.co/orcarouter).
 - OpenRouter: `GET https://openrouter.ai/api/v1/models`.
+- Dagon Inference: `GET https://inference.dagon.so/v1/models` (public, no key; price version 2026-11-10.7, read on
+  2026-11-10; the [pricing page](https://inference.dagon.so/abliterated-llm-pricing) and model pages can show an earlier
+  build snapshot) and the [terms](https://inference.dagon.so/terms), which name the upstream providers and say a
+  Refuseless-routed request may be served by a deployment that has not had refusals removed. Prices include Dagon's 10%
+  markup over the cheapest provider; a request that falls back to another provider is billed at that provider's rate.
+  Added by the operator of Dagon.
 
 ## License
 
