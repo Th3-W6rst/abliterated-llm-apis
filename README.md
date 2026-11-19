@@ -31,6 +31,7 @@ US$ per 1M tokens, input / output.
 | [NanoGPT](https://nano-gpt.com) | `z-ai/glm-5.3-uncensored` | 1.25 / 2.25 (cache read 0.30) | 1,048,576 | OpenAI | Not stated ("experimental uncensored") |
 | [abliteration.ai](https://abliteration.ai) | `abliterated-model-large-v2` | 3.00 / 5.00 | ~1.05M | OpenAI, Anthropic | Abliteration |
 | [Venice](https://venice.ai) | Abliterated Large V2 | 3.00 / 5.00 | ~1.05M | OpenAI | Not stated |
+| [AbliteratedLLM](https://abliteratedllm.dev) | `glm-5.3-cyber-abliterated` | 0.90 / 1.80 (cache read 0.135) | 1,048,576 | OpenAI, Anthropic, Responses | Weight edit: [dealignai/GLM-5.3-CYBERSECURITY-FP8](https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8), served in FP8. Refusal removal targets cybersecurity work |
 
 ## GLM 5.3 Flash and other small models
 
@@ -79,7 +80,7 @@ Read on 2026-10-27.
 - Venice: [docs.venice.ai/overview/pricing](https://docs.venice.ai/overview/pricing.md).
 - OrcaRouter: [orcarouter.ai](https://www.orcarouter.ai) model pages and [huggingface.co/orcarouter](https://huggingface.co/orcarouter).
 - OpenRouter: `GET https://openrouter.ai/api/v1/models`.
-- AbliteratedLLM: `GET https://api.abliteratedllm.dev/v1/models` (public, no key; read on 2026-11-09) and [abliteratedllm.dev/pricing](https://abliteratedllm.dev/pricing).
+- AbliteratedLLM: `GET https://api.abliteratedllm.dev/v1/models` (public, no key; read on 2026-11-19) and [abliteratedllm.dev/pricing](https://abliteratedllm.dev/pricing).
 
 ## License
 
