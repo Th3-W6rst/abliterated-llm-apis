@@ -31,6 +31,7 @@ US$ per 1M tokens, input / output.
 | [NanoGPT](https://nano-gpt.com) | `z-ai/glm-5.3-uncensored` | 1.25 / 2.25 (cache read 0.30) | 1,048,576 | OpenAI | Not stated ("experimental uncensored") |
 | [abliteration.ai](https://abliteration.ai) | `abliterated-model-large-v2` | 3.00 / 5.00 | ~1.05M | OpenAI, Anthropic | Abliteration |
 | [Venice](https://venice.ai) | Abliterated Large V2 | 3.00 / 5.00 | ~1.05M | OpenAI | Not stated |
+| [CommentLLM](https://commentllm.com) | `glm-5.3-abliterated` | 1.00 / 2.00 (cache read 0.15) | 1,048,576 | OpenAI, Anthropic | Abliteration, per the provider |
 
 ## GLM 5.3 Flash and other small models
 
@@ -43,6 +44,9 @@ US$ per 1M tokens, input / output.
 | Venice | Abliterated Large Flash | 1.25 / 2.50 | |
 | Refuseless | `glm-5.3-flash-abliterated` | Not published | Price not listed in the public docs |
 | [OrcaRouter](https://www.orcarouter.ai) | OrcaCyber GLM 5.3 Flash | Not published per token | Publishes its weights and refusal-rate method on Hugging Face |
+| [CommentLLM](https://commentllm.com) | `glm-5.3-flash-abliterated` | 0.12 / 0.50 (cache read 0.025) | Read 2026-11-26. 1,048,576 context, 32,768 output. OpenAI Chat Completions, Responses and Anthropic formats, tool calling |
+| CommentLLM | `deepseek-v4.1-flash-abliterated` | 0.12 / 0.45 (cache read 0.019) | Read 2026-11-26. 1,048,576 context, 32,768 output. Customer-set gateway policies and a decision log |
+| CommentLLM | `deepseek-v4.1-flash-abliterated-fast` | 0.12 / 0.45 (cache read 0.025) | Read 2026-11-26. Faster-serving variant of the row above, same limits |
 
 For price alone on the Flash tier, NanoGPT and MagmaRouter are the cheapest options listed here.
 
@@ -77,6 +81,8 @@ Read on 2026-10-27.
 - abliteration.ai and MagmaRouter: [magmarouter.com/alternatives/abliteration-ai](https://magmarouter.com/alternatives/abliteration-ai/).
 - Venice: [docs.venice.ai/overview/pricing](https://docs.venice.ai/overview/pricing.md).
 - OrcaRouter: [orcarouter.ai](https://www.orcarouter.ai) model pages and [huggingface.co/orcarouter](https://huggingface.co/orcarouter).
+- CommentLLM (read on 2026-11-26): the public catalog at `GET https://commentllm.com/api/models` and
+  [commentllm.com/pricing](https://commentllm.com/pricing).
 - OpenRouter: `GET https://openrouter.ai/api/v1/models`.
 
 ## License
