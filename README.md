@@ -43,6 +43,8 @@ US$ per 1M tokens, input / output.
 | Venice | Abliterated Large Flash | 1.25 / 2.50 | |
 | Refuseless | `glm-5.3-flash-abliterated` | Not published | Price not listed in the public docs |
 | [OrcaRouter](https://www.orcarouter.ai) | OrcaCyber GLM 5.3 Flash | Not published per token | Publishes its weights and refusal-rate method on Hugging Face |
+| [CommentLLM](https://commentllm.com) | `qwen3.8-27b-abliterated` | 0.80 / 2.00 (cache read 0.08) | Read 2026-11-26. 262,144 context, 65,536 output. OpenAI Chat Completions, Responses and Anthropic formats, tool calling |
+| CommentLLM | `deepseek-v4.1-flash-1017-abliterated` | 3.00 / 5.00 (cache read 0.30) | Read 2026-11-26. 1,048,576 context, 32,768 output. Customer-set gateway policies and a decision log |
 
 For price alone on the Flash tier, NanoGPT and MagmaRouter are the cheapest options listed here.
 
@@ -77,6 +79,8 @@ Read on 2026-10-27.
 - abliteration.ai and MagmaRouter: [magmarouter.com/alternatives/abliteration-ai](https://magmarouter.com/alternatives/abliteration-ai/).
 - Venice: [docs.venice.ai/overview/pricing](https://docs.venice.ai/overview/pricing.md).
 - OrcaRouter: [orcarouter.ai](https://www.orcarouter.ai) model pages and [huggingface.co/orcarouter](https://huggingface.co/orcarouter).
+- CommentLLM (read on 2026-11-26): the public catalog at `GET https://commentllm.com/api/models` and
+  [commentllm.com/pricing](https://commentllm.com/pricing).
 - OpenRouter: `GET https://openrouter.ai/api/v1/models`.
 
 ## License
