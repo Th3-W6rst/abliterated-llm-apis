@@ -31,6 +31,7 @@ US$ per 1M tokens, input / output.
 | [NanoGPT](https://nano-gpt.com) | `z-ai/glm-5.3-uncensored` | 1.25 / 2.25 (cache read 0.30) | 1,048,576 | OpenAI | Not stated ("experimental uncensored") |
 | [abliteration.ai](https://abliteration.ai) | `abliterated-model-large-v2` | 3.00 / 5.00 | ~1.05M | OpenAI, Anthropic | Abliteration |
 | [Venice](https://venice.ai) | Abliterated Large V2 | 3.00 / 5.00 | ~1.05M | OpenAI | Not stated |
+| [OpenUncensored](https://openuncensored.com) | `glm-5.3-uncensored` | 0.39 / 1.32 | 1,048,576 | OpenAI, Anthropic | Router: each request goes to one of several hosts, so the method is that host's (hosts listed on the model page) |
 
 ## GLM 5.3 Flash and other small models
 
@@ -43,6 +44,8 @@ US$ per 1M tokens, input / output.
 | Venice | Abliterated Large Flash | 1.25 / 2.50 | |
 | Refuseless | `glm-5.3-flash-abliterated` | Not published | Price not listed in the public docs |
 | [OrcaRouter](https://www.orcarouter.ai) | OrcaCyber GLM 5.3 Flash | Not published per token | Publishes its weights and refusal-rate method on Hugging Face |
+| [OpenUncensored](https://openuncensored.com) | `glm-5.3-flash-uncensored` | 0.12 / 0.50 | Router across several hosts; OpenAI and Anthropic formats |
+| OpenUncensored | `deepseek-v4.1-flash-1017-uncensored` | 0.33 / 1.32 | Router across several hosts |
 
 For price alone on the Flash tier, NanoGPT and MagmaRouter are the cheapest options listed here.
 
@@ -78,6 +81,7 @@ Read on 2026-10-27.
 - Venice: [docs.venice.ai/overview/pricing](https://docs.venice.ai/overview/pricing.md).
 - OrcaRouter: [orcarouter.ai](https://www.orcarouter.ai) model pages and [huggingface.co/orcarouter](https://huggingface.co/orcarouter).
 - OpenRouter: `GET https://openrouter.ai/api/v1/models`.
+- OpenUncensored (read on 2026-11-26): `GET https://api.openuncensored.com/v1/models` (per-token prices and context) and [openuncensored.com/models](https://openuncensored.com/models).
 
 ## License
 
